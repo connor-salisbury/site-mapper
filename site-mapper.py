@@ -25,4 +25,5 @@ if __name__ == '__main__':
 
     # root_url = sys.argv[1]
     root_url = 'https://' + domain
-    crawler(root_url, out_file='sitemap.xml')
+    path = domain
+    crawler(root_url, out_file=path+'sitemap.xml')
