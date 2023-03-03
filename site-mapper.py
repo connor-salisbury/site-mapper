@@ -1,7 +1,7 @@
 import sys
 import logging
 import argparse
-import os
+# import os
 from pysitemap import crawler
 
 # Define the argument parser
@@ -26,4 +26,4 @@ if __name__ == '__main__':
     # root_url = sys.argv[1]
     root_url = 'https://' + domain
     path = domain
-    crawler(root_url, out_file=path+'sitemap.xml')
+    crawler(root_url, out_file='sitemaps-saves/'+path+'sitemap.xml')
